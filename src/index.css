@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #e6e6ff;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.animatedButton {
+    animation-duration: 10000ms;
+}
+
+.ql-toolbar{
+    border: none !important;
+}
+
+.ql-container {
+  border: none !important;
+  height: 500px !important; /* chiều cao khung editor */
+}
+
+.ql-editor {
+  border: none !important;
+  height: 450px !important; /* vùng nhập */
+  overflow-y: auto; /* cuộn khi text quá dài */
+}
+
+.ql-editor p:empty {
+    margin: 0; /* xóa margin cho thẻ p trống */
+}
